@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MVC.Sorveteria.Repositories
 {
-    interface ILojaRepository
+    public interface ILojaRepository
     {
         void Cadastrar(Loja loja);
         void Atualizar(Loja loja);

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MVC.Sorveteria.Repositories
 {
-    interface ISorveteRepository
+    public interface ISorveteRepository
     {
         void Cadastrar(Sorvete sorvete);
         void Atualizar(Sorvete sorvete);

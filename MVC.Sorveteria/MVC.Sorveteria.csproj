@@ -110,6 +110,7 @@
     <Compile Include="Repositories\ISorveteRepository.cs" />
     <Compile Include="Repositories\LojaRepository.cs" />
     <Compile Include="Repositories\SorveteRepository.cs" />
+    <Compile Include="Units\UnityOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
