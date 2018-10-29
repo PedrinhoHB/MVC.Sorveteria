@@ -1,0 +1,32 @@
+﻿@model MVC.Sorveteria.Models.Sorvete
+@{
+    ViewBag.Title = "Cadastrar";
+}
+
+<h2>Cadastrar um sorvete</h2>
+
+@if (TempData["msg"] != null)
+{
+    <div class="alert alert-success">@TempData["msg"]</div>
+}
+
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(s => s.Nome)
+        @Html.TextBoxFor(s => s.Nome, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(s => s.Sabor)
+        @Html.TextBoxFor(s => s.Sabor, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(s => s.DataValidade)
+        @Html.TextBoxFor(s => s.DataValidade, new { @class = "form-control" })
+    </div>
+    <div class="form-check">
+        @Html.Label("Casquinha ?")
+        @Html.CheckBoxFor(s => s.Casquinha, new { @class = "form-check-input" })
+    </div>
+    <input type="submit" value="Cadastrar" class="btn btn-primary" />
+}
