@@ -9,7 +9,7 @@ namespace MVC.Sorveteria.Units
 {
     public class UnityOfWork : IDisposable
     {
-        private SorveteriaContext _context;
+        private SorveteriaContext _context = new SorveteriaContext();
 
         private ISorveteRepository _sorveteRepository;
 
